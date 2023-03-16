@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Answer of the Questions</title>
+        <!-- Bootstrap cdn goes here -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Answer to the following question no.1 -->
+    <div class="accordion mt-5" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                What is the difference between map(),filter(),find(),forEach()?
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+            <div class="accordion-body">
+                map() creates a new array by transforming each element of the original array, filter() creates a new array by selecting elements that meet a certain condition, find() returns the first element that meets a certain condition, and forEach() applies a function to each element of the array without returning anything.
+            </div>
+          </div>
+        </div>
+        <!-- Answer to the following question no.2 -->
+        <div class="accordion-item mt-5">
+            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+            What is the difference between Local storage, Session storage and Cookies?
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+              <div class="accordion-body">
+                Local storage, Session storage, and Cookies - are mechanisms provided by modern web browsers to store data on the client-side. However, they differ in the way they store data and their intended use cases.
+                In summary, Local storage is used for storing persistent data, Session storage is used for storing temporary data that is cleared when the browser is closed, and Cookies are used for maintaining user state, preferences, and tracking user activity.
+              </div>
+            </div>
+          </div>
+          <!-- Answer to the following question no.3 -->
+          <div class="accordion-item mt-5">
+            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                What is event loop and how's it works?
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+              <div class="accordion-body">
+                The event loop is a fundamental concept in JavaScript that allows the language to support asynchronous programming. It is responsible for managing the execution of code, including timers, I/O operations, and event handlers, in a non-blocking way.
+                By using this mechanism, the event loop ensures that JavaScript code can execute asynchronously without blocking the main thread of the browser, allowing for a more responsive and performant user experience.
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- quizTimer and  chooseQuiz answers-->
+        <section mt-5 d-flex>
+            <div>
+                <h4 class="text-center">How does the quizTimer() function works here?</h4>
+                <p class="text-center">This function sets up a timer that counts the amount of time that the quiz-taker spends on the quiz. It takes a single parameter dismiss, which is used to determine whether the timer should be stopped or started.</p>
+            </div>
+        </section>
+        <section class="mt-5">
+            <div>
+                <h4 class="text-center">How does the chooseQuiz() function works here?</h4>
+                <p>This function updates the answers array with the user's answer to a quiz question. It takes two parameters: index is the index of the current question being answered, and givenAns is the answer given by the user.</p>
+            </div>
+        </section>
+    <!-- Bootstrap Script CDN goes here -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
